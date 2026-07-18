@@ -51,7 +51,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.AyanTech"
-            artifactId = "ui-tools"
+            artifactId = "Whygoogle"
             version = "2.0.0"
 
             afterEvaluate {

@@ -46,3 +46,23 @@ dependencies {
     api(libs.nonfinalviewpager2)
     api(libs.gson)
 }
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.AyanTech"
+            artifactId = "ui-tools"
+            version = "2.0.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+
+            pom {
+                name.set("Ayan Android UI tools")
+                description.set("")
+                url.set("https://github.com/AyanTech/Android-ui-tools")
+            }
+        }
+    }
+}

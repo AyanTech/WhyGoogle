@@ -75,7 +75,7 @@ abstract class SwipableWhyGoogleActivity<T : ViewBinding> : AppCompatActivity(),
                         return@listener
                     }
                     while (fragmentHost.currentItem <= getFragmentCount() - 2) {
-                        fragmentStack.removeLast()
+                        fragmentStack.removeLastOrNull()
                     }
                     if (previousCount >= fragmentHost.currentItem + 2) {
                         whyGoogleFragmentAdapter.notifyItemRangeRemoved(
@@ -193,7 +193,7 @@ abstract class SwipableWhyGoogleActivity<T : ViewBinding> : AppCompatActivity(),
     }
 
     override fun startWithPop(fragment: WhyGoogleFragment<*>) {
-        fragmentStack.removeLast()
+        fragmentStack.removeLastOrNull()
         fragmentStack.add(fragment)
         whyGoogleFragmentAdapter.notifyItemChanged(getFragmentCount() - 1)
     }
@@ -201,7 +201,7 @@ abstract class SwipableWhyGoogleActivity<T : ViewBinding> : AppCompatActivity(),
     override fun <P> startWithPopTo(fragment: WhyGoogleFragment<*>, target: Class<P>) {
         val previousCount = getFragmentCount()
         while (fragmentStack.last().javaClass != target)
-            fragmentStack.removeLast()
+            fragmentStack.removeLastOrNull()
         whyGoogleFragmentAdapter.notifyItemRangeRemoved(
             getFragmentCount() - 1,
             previousCount - 1

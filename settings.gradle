@@ -25,4 +25,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "whygoogle"
 include(":app")
-include(":WhyGoogle")
+include(":whygoogle")

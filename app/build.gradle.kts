@@ -43,5 +43,5 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.nonfinalviewpager2)
 
-    implementation(project(":WhyGoogle"))
+    implementation(project(":whygoogle"))
 }

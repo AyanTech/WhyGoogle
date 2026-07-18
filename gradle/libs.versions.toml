@@ -1,0 +1,29 @@
+[versions]
+agp = "9.3.0"
+androidxAppcompat ="1.7.1"
+constraintlayout = "2.2.1"
+coreKtx = "1.17.0"
+gsonVersion = "2.14.0"
+kotlinStdlib = "2.4.0"
+lifecycleRuntimeKtx = "2.6.1"
+kotlin = "2.4.0"
+material = "1.13.0"
+activityKtx = "1.11.0"
+nonfinalviewpager2 = "0.2.4"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlinStdlib" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlinStdlib" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+nonfinalviewpager2 = { module = "com.github.shadowalker77:nonfinalviewpager2", version.ref = "nonfinalviewpager2" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

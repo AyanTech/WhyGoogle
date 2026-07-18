@@ -23,6 +23,6 @@ dependencyResolutionManagement {
         maven { url = "https://jitpack.io" }
     }
 }
-rootProject.name = "whygoogle"
+rootProject.name = "Whygoogle-Sample"
 include(":app")
 include(":whygoogle")

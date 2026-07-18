@@ -51,7 +51,7 @@ publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "com.github.AyanTech"
-            artifactId = "Whygoogle"
+            artifactId = "whygoogle"
             version = "2.0.0"
 
             afterEvaluate {
@@ -61,7 +61,7 @@ publishing {
             pom {
                 name.set("Ayan Android UI tools")
                 description.set("")
-                url.set("https://github.com/AyanTech/Android-ui-tools")
+                url.set("https://github.com/AyanTech/WhyGoogle")
             }
         }
     }

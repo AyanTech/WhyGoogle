@@ -52,7 +52,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.AyanTech"
             artifactId = "whygoogle"
-            version = "2.0.0"
+            version = "2.0.6"
 
             afterEvaluate {
                 from(components["release"])

@@ -110,7 +110,9 @@ abstract class WhyGoogleActivity<T : ViewBinding> : AppCompatActivity(), WhyGoog
 
     override fun getFragmentCount() = supportFragmentManager.backStackEntryCount
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
+        super.onBackPressed()
         when {
             getTopFragment()?.onBackPressed() == true -> {
             }
